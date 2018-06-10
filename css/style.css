@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #fff;
+  font: 300 1rem/1.5 Lato, sans-serif;
+  margin: 0;
+  min-height: 100%;
+}
+
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.align__item--start {
+  align-self: flex-start;
+}
+.align__item--end {
+  align-self: flex-end;
+}
+
+.animation {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.animation--infinite {
+  animation-iteration-count: infinite;
+}
+.animation--up-down {
+  animation-name: upDown;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.text--center {
+  text-align: center;
+}
+
+.site__header {
+  left: 0;
+  padding: 3rem 0;
+  position: fixed;
+  top: 0;
+  transform: translateZ(0);
+  width: 100%;
+  z-index: 1;
+}
+.site__logo {
+  float: left;
+}
+
+.site__section {
+  min-height: 100vh;
+  position: relative;
+}
+.site__section--start {
+  background: url("http://i.huffpost.com/gen/2108448/images/o-INOVATION-facebook.jpg");
+}
+
+.site__section--cases {
+  background: url("http://www.tramaweb.com.br/imagens/gde/Logos_Parceria_ESPM_CIETEC_20101217162827.jpg") no-repeat center center fixed;
+}
+
+.site__section--about {
+    color: black;
+    background: url("http://wallpaperswide.com/download/light_gray_texture-wallpaper-1366x768.jpg");
+}
+
+.site__section--about h2 {
+  float: center;
+  margin-top: 0%;
+  font-family: 'Slabo 35px', serif;
+}
+
+.site__section--about p {
+  position: absolute;
+  float: center;
+  font-family: 'Slabo 35px', serif;
+  font-size: 20px;
+  margin-top: -5%;
+  margin-right: 5%;
+}
+
+
+.button {
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+.button--primary {
+  background-color: #ce3d90;
+}
+.button--rounded {
+  border-radius: 999px;
+}
+.button--scroll {
+  bottom: 2rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 74rem;
+  width: 90%;
+}
+.grid:before, .grid:after {
+  content: ' ';
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 .5rem;
+  text-transform: uppercase;
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a {
+  display: block;
+}
+.navigation--inline > ul:before, .navigation--inline > ul:after {
+  content: ' ';
+  display: table;
+}
+.navigation--inline > ul:after {
+  clear: both;
+}
+.navigation--inline > ul > li {
+  float: left;
+}
+.navigation--main {
+  float: right;
+  text-transform: uppercase;
+}
+.navigation--main > ul {
+  margin: 0 -2rem;
+}
+.navigation--main > ul > li {
+  margin: 0 2rem;
+}
+.navigation--main a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#jonathan {
+  width: 15%;
+  height: 5%;
+  margin: 6% 50% 0% 0%;
+  border-radius: 50%;
+}
+
+#jonathanText {
+  margin: 1% 30% 0% 19%;
+}
+
+#gabriel {
+  width: 15%;
+  height: 5%;
+  border-radius: 50%;
+  margin: -50% 0% 0% 50%;
+}
+
+#gabrielText {
+  margin: 1% 0% 0% 64%;
+}
+

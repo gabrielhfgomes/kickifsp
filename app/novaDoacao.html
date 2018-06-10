@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>KICKIFSP - Novo</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">        
+            
+        <!-- CSS -->
+        <link href="css/app.css" rel="stylesheet">
+        
+        <!-- Following CSS are used only for the Demp purposes thus you can remove this anytime. -->
+        <style type="text/css">
+            .toggle-switch .ts-label {
+                min-width: 130px;
+            }
+        </style>
+    </head>
+    
+    <body>
+       <header id="header" class="clearfix" data-current-skin="green">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+
+                <li class="logo hidden-xs">
+                    <a href="../index.html">KICKIFSP  <span><img src="img/geral/LogoFB.png" width="16" height="16"></span></a>
+                </li>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar" class="sidebar c-overflow">
+                <div class="profile-menu">
+                    <a href="">
+                        <div class="profile-pic">
+                            <img src="img/profile-pics/2.jpg" alt="">
+                        </div>
+
+                        <div class="profile-info">
+                            Usuário
+
+                           <!-- <i class="zmdi zmdi-caret-down"></i>-->
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="main-menu">
+                    <li class="active">
+                        <a href="main.html"><i class="zmdi zmdi-home"></i> Home</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href=""><i class="zmdi zmdi-view-list"></i> Novo</a>
+
+                        <ul>
+                            <li><a href="novoProjeto.html">Projeto </a></li>
+                            <li><a href="novaDoacao.html">Doação</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href=""><i class="zmdi zmdi-search"></i> Buscar Projetos</a>
+
+                        <ul>
+                            <li><a href="projetosNovos.html">Novos</a></li>
+                            <li><a href="projetosFinal.html">Fase Final</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="minhasDoacoes.html"><i class="zmdi zmdi-star"></i> Minhas doações</a></li>
+                </ul>
+            </aside>
+   
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Doação</h2>    
+                    </div>
+                
+                    <form>
+                            
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Realize uma doação <small>Ajude um projeto a atingir sua meta</small></h2>
+                            </div>
+                            
+                            <div class="card-body card-padding">
+                                
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col-sm-4">                       
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="zmdi zmdi-assignment-check"></i></span>
+                                            <div class="fg-line">
+                                                    <input type="text" class="form-control" placeholder="Nome">
+                                            </div>
+                                        </div>
+                                        
+                                        <br/>
+                                        
+                                        
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                                            <div class="fg-line">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        
+                                        <br/>
+                                        
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+                                            <div class="fg-line">    
+                                                <input type="number" class="form-control" placeholder="Valor">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <br/><br/>
+                                
+                            
+                               <input type="submit" value="DOAR" class="btn btn-success"></input>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright &copy; 2016 Kickifsp
+        </footer>
+
+        <!-- Page Loader -->
+        <div class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20" />
+                </svg>
+
+                <p>Aguarde...</p>
+            </div>
+        </div>
+
+        <!-- Bibliotecas JS -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>  
+        <script src="vendors/input-mask/input-mask.min.js"></script>
+        <script src="js/functions.js"></script>
+
+    </body>
+</html>
